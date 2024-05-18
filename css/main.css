@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p {
+    font-family: "Gulzar", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  body{
+    background-color: #080710;
+}
+  .background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #9b22ea,
+        #bf23f6
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
+  .main{
+      width: 100%;
+  }
+  .main .glass-container{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    height: 500px;
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.07);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    direction: rtl;
+  }
+  .main .glass-container h2{
+    font-family: "Noto Nastaliq Urdu", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: 35px;
+}
+.main .glass-container h2::after {
+    content: "";
+    height: 2px;
+    width: 60%;
+    position: absolute;
+    background-color: #080710;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 74px;
+}
+.main .glass-container p{
+    color: white;
+    font-size: 25px;
+    transition: .4s;
+}
+.main .glass-container p::before{
+    content: "\"";
+    color: #ffffff;
+}
+.main .glass-container p::after{
+    content: "\"";
+    color: #ffffff;
+}
+.main .glass-container button{
+    position: absolute;
+    top: 78%;
+    margin-right: 140px;
+    padding: 5px 20px;
+    border-radius: 25px;
+    border: 1px solid #b606dc;
+    background-color: #c604eb;
+    color: white;
+    font-size: 15px;
+    width: 120px;
+    font-family: "Noto Nastaliq Urdu", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+.main .glass-container .btn-2{
+    position: absolute;
+    top: 78%;
+    margin-left: 282px;
+    padding: 4px 17px;
+    border-radius: 25px;
+    border: 1px solid #b606dc;
+    background-color: #c504eb00;
+    color: white;
+    font-size: 15px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row-reverse;
+}
+.main .glass-container button img{
+    width: 35px;
+}
+.main .glass-container .btn-2 img{
+    width: 35px;
+}
